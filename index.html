@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/src/assets/images/logo.png" />
+  <link href="/src/css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/cdn/jquery.css">
+  <script src="/src/js/tailwind3.3.3.js"></script>
+  <script src="/cdn/fontawsome.js" crossorigin="anonymous"></script>
+
+
+  <title>Chilis</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!-- Red line -->
+  <div class="bg-prime py-0.5"></div>
+  <!-- Navigation -->
+  <nav class="  md:border-b-0 border-b-2 sticky top-0 z-20 bg-footer">
+    <div class="max-w-5xl mx-auto py-4 px-2 flex justify-between items-center">
+      <button class="lg:hidden block" onclick="menu()"><i class="fa-solid fa-bars text-2xl"></i></button>
+      <div class="flex space-x-4 uppercase items-center">
+        <a href="/"><img src="/src/assets/images/logo.png" alt="logo" class="w-16 h-10"></a>
+        <div class="space-x-4 uppercase items-center lg:flex hidden ">
+          <a href="" class="hover:border-b-2 transition-all ease-in-out">menu</a>
+          <a href="" class="hover:border-b-2 transition-all ease-in-out">rewards</a>
+          <a href="" class="hover:border-b-2 transition-all ease-in-out">locations</a>
+          <a href="" class="hover:border-b-2 transition-all ease-in-out">gift cards</a>
+          <a href="" class="hover:border-b-2 transition-all ease-in-out">Log in</a>
+        </div>
+      </div>
+      <div class="flex space-x-4 items-center">
+        <div class="relative hover:scale-110 transition-all duration-500 ease-in-out cursor-pointer"
+          id="toggle-sidebar">
+          <i class="fa-solid fa-bag-shopping text-3xl "></i>
+          <div class="absolute -top-1 -right-2 rounded-lg text-white bg-prime py-1 px-2 text-xs">1</div>
+        </div>
+        <button
+          class=" bg-prime hover:bg-red-600 btn text-white py-3 px-10 font-bold   text-xs rounded-md uppercase  lg:block hidden">Order
+          now</button>
+      </div>
+    </div>
+
+  </nav>
+  <!-- Mobile menu -->
+  <div class="menu z-30 ">
+    <div class="flex-col space-y-4 uppercase  flex bg-footer">
+      <a href="/" class="border-b w-full text-center py-2">order now</a>
+      <a href="" class="border-b w-full text-center py-2">menu</a>
+      <a href="" class="border-b w-full text-center py-2">rewards</a>
+      <a href="" class="border-b w-full text-center py-2">locations</a>
+      <a href="" class="border-b w-full text-center py-2">gift cards</a>
+      <a href="" class="border-b w-full text-center py-2">Log in</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="relative">
+    <picture class="w-full ">
+      <!-- 400 x 300 -->
+      <source media="(max-width: 500px)" srcset="/src/assets/images/43.png" class="w-full" />
+      <!-- 800 x 400 -->
+      <source media="(max-width: 800px)" srcset="/src/assets/images/84.png" class="w-full" />
+      <!-- 1600 x 400 -->
+      <img src="/src/assets/images/1600x400.png" class="w-full" />
+    </picture>
+    <button
+      class="absolute hover:bg-red-600 top-1/2 right-1/4 bg-prime text-white py-3 md:px-5 font-bold  lg:px-10 px-2  md:text-lg  text-xs rounded-md uppercase">Order
+      now</button>
+  </div>
+
+  <!-- Dishes -->
+  <div class="uppercase text-center md:text-4xl text-2xl my-10 font-bold">CHILI'S FAVORITES</div>
+  <div class="max-w-7xl mx-auto md:p-0 p-4 grid-container md:my-10 my-4">
+    <!-- Card-01 -->
+    <div class="p-4 rounded-lg  bg-gray-100">
+      <!-- Image -->
+      <div class="overflow-hidden cursor-pointer">
+        <img src="/src/assets/images/f1.avif" alt=""
+          class="hover:scale-110 transition-all ease-in-out duration-700  overflow-hidden ">
+      </div>
+      <!-- Text -->
+      <div>
+        <div class="text-lg font-semibold my-2 px-1 text-start truncate">Chicken Fajitas</div>
+        <div class="text-xs text-gray-600 text-justify  line-clamp-3 px-1">Chicken Fajitas served with rice and
+          beans, tortillas, guacamole, salsa and sour cream
+          Chicken Fajitas served with rice and beans, tortillas, guacamole, salsa and sour cream
+        </div>
+        <button class="mt-2 px-4 py-2 bg-prime text-white rounded w-full hover:bg-red-600">Add to Order</button>
+      </div>
+    </div>
+
+
+    <!-- Card-02 -->
+    <div class="p-4 rounded-lg  bg-gray-100">
+      <!-- Image -->
+      <div class="overflow-hidden cursor-pointer">
+        <img src="/src/assets/images/f2.avif" alt=""
+          class="hover:scale-110 transition-all ease-in-out duration-700  overflow-hidden ">
+      </div>
+      <!-- Text -->
+      <div>
+        <div class="text-lg font-semibold my-2 px-1 text-start truncate">Chicken Fajitas</div>
+        <div class="text-xs text-gray-600 text-justify  line-clamp-3 px-1">Chicken Fajitas served with rice and
+          beans, tortillas, guacamole, salsa and sour cream
+          Chicken Fajitas served with rice and beans, tortillas, guacamole, salsa and sour cream
+        </div>
+        <button class="mt-2 px-4 py-2 bg-prime text-white rounded w-full hover:bg-red-600">Add to Order</button>
+      </div>
+    </div>
+    <!-- Card-03 -->
+    <div class="p-4 rounded-lg  bg-gray-100">
+      <!-- Image -->
+      <div class="overflow-hidden cursor-pointer">
+        <img src="/src/assets/images/f3.avif" alt=""
+          class="hover:scale-110 transition-all ease-in-out duration-700  overflow-hidden ">
+      </div>
+      <!-- Text -->
+      <div>
+        <div class="text-lg font-semibold my-2 px-1 text-start truncate">Chicken Fajitas</div>
+        <div class="text-xs text-gray-600 text-justify  line-clamp-3 px-1">Chicken Fajitas served with rice and
+          beans, tortillas, guacamole, salsa and sour cream
+          Chicken Fajitas served with rice and beans, tortillas, guacamole, salsa and sour cream
+        </div>
+        <button class="mt-2 px-4 py-2 bg-prime text-white rounded w-full hover:bg-red-600">Add to Order</button>
+      </div>
+    </div>
+    <!-- Card-04 -->
+    <div class="p-4 rounded-lg  bg-gray-100">
+      <!-- Image -->
+      <div class="overflow-hidden cursor-pointer">
+        <img src="/src/assets/images/f4.avif" alt=""
+          class="hover:scale-110 transition-all ease-in-out duration-700  overflow-hidden ">
+      </div>
+      <!-- Text -->
+      <div>
+        <div class="text-lg font-semibold my-2 px-1 text-start truncate">Chicken Fajitas</div>
+        <div class="text-xs text-gray-600 text-justify  line-clamp-3 px-1">Chicken Fajitas served with rice and
+          beans, tortillas, guacamole, salsa and sour cream
+          Chicken Fajitas served with rice and beans, tortillas, guacamole, salsa and sour cream
+        </div>
+        <button class="mt-2 px-4 py-2 bg-prime text-white rounded w-full hover:bg-red-600">Add to Order</button>
+      </div>
+    </div>
+    <!-- Card-05 -->
+    <div class="p-4 rounded-lg  bg-gray-100">
+      <!-- Image -->
+      <div class="overflow-hidden cursor-pointer">
+        <img src="/src/assets/images/f1.avif" alt=""
+          class="hover:scale-110 transition-all ease-in-out duration-700  overflow-hidden ">
+      </div>
+      <!-- Text -->
+      <div>
+        <div class="text-lg font-semibold my-2 px-1 text-start truncate">Chicken Fajitas</div>
+        <div class="text-xs text-gray-600 text-justify  line-clamp-3 px-1">Chicken Fajitas served with rice and
+          beans, tortillas, guacamole, salsa and sour cream
+          Chicken Fajitas served with rice and beans, tortillas, guacamole, salsa and sour cream
+        </div>
+        <button class="mt-2 px-4 py-2 bg-prime text-white rounded w-full hover:bg-red-600">Add to Order</button>
+      </div>
+    </div>
+    <!-- Card-06 -->
+    <div class="p-4 rounded-lg  bg-gray-100">
+      <!-- Image -->
+      <div class="overflow-hidden cursor-pointer">
+        <img src="/src/assets/images/f2.avif" alt=""
+          class="hover:scale-110 transition-all ease-in-out duration-700  overflow-hidden ">
+      </div>
+      <!-- Text -->
+      <div>
+        <div class="text-lg font-semibold my-2 px-1 text-start truncate">Chicken Fajitas</div>
+        <div class="text-xs text-gray-600 text-justify  line-clamp-3 px-1">Chicken Fajitas served with rice and
+          beans, tortillas, guacamole, salsa and sour cream
+          Chicken Fajitas served with rice and beans, tortillas, guacamole, salsa and sour cream
+        </div>
+        <button class="mt-2 px-4 py-2 bg-prime text-white rounded w-full hover:bg-red-600">Add to Order</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Join Login Banner -->
+  <div class="relative">
+    <picture class="w-full ">
+      <!-- 400 x 300 -->
+      <source media="(max-width: 500px)" srcset="/src/assets/images/43.png" class="w-full" />
+      <!-- 800 x 400 -->
+      <source media="(max-width: 800px)" srcset="/src/assets/images/84.png" class="w-full" />
+      <!-- 1600 x 400 -->
+      <img src="/src/assets/images/1600x400.png" class="w-full" />
+    </picture>
+    <div
+      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center lg:text-4xl md:text-2xl text-xl font-bold">
+      Get <span class="text-red-500">FREE</span> Chips & Salsa or a Non-Alcoholic Beverage* by signing up for My Chili's
+      Rewards®!
+      <div class=" flex flex-col justify-center items-center my-4 space-y-4">
+        <button
+          class="lg:text-xl text-md text-xs bg-red-600  text-white hover:scale-110 py-3 px-10 font-bold transition-all ease-in-out duration-500  rounded-md uppercase md:block hidden">
+          JOIN MY CHILI'S REWARDS</button>
+        <button
+          class="lg:text-xl text-md text-xs bg-white  text-red-600  hover:scale-110 py-3 px-10 font-bold  transition-all ease-in-out duration-500  rounded-md uppercase md:block hidden">
+          LOG IN TO MY CHILI'S REWARDS
+        </button>
+      </div>
+    </div>
+    <!-- <button class=" hover:bg-red-600  bg-prime  py-3 md:px-5 font-bold  lg:px-10 px-2  md:text-lg  text-xs rounded-md uppercase" >Order now</button> -->
+  </div>
+
+  <!-- Footer -->
+  <div class="bg-footer">
+    <footer class="flex flex-col justify-center items-center py-20 max-w-6xl mx-auto ">
+      <div class="space-y-14">
+        <ul class="uppercase flex flex-wrap  space-x-10 text-gray-700 text-sm justify-center items-center">
+          <li class=""><a href="/"><img src="/src/assets/images/logo.png" alt=""
+                class="w-20 hover:scale-110 transition-all ease-in-out duration-700  overflow-hidden"></a></li>
+          <li class="mt-4"><a href="" class="hover:text-red-500">CONTACT US</a></li>
+          <li class="mt-4"><a href="" class="hover:text-red-500">NUTRITION INFO </a></li>
+          <li class="mt-4"><a href="" class="hover:text-red-500">EMPLOYMENT</a></li>
+          <li class="mt-4"><a href="" class="hover:text-red-500"> OUR STORY</a></li>
+          <li class="mt-4"><a href="" class="hover:text-red-500">WHO WE ARE</a></li>
+          <li class="mt-4"><a href="" class="hover:text-red-500">FRANCHISING</a></li>
+        </ul>
+        <ul class="uppercase flex flex-wrap  space-x-10  text-gray-700 text-xs justify-center items-center">
+
+          <li class="mt-4"><a href="" class="hover:text-red-500">TERMS & CONDITIONS </a></li>
+          <li class="mt-4"><a href="" class="hover:text-red-500">SITEMAP</a></li>
+          <li class="mt-4"><a href="" class="hover:text-red-500"> PRIVACY POLICY</a></li>
+          <li class="mt-4"><a href="" class="hover:text-red-500"> WEB ACCESSIBILITY</a></li>
+        </ul>
+        <ul class="uppercase flex flex-wrap  space-x-2  text-gray-700 justify-center items-center text-3xl">
+          <li class="mt-4"><a href="" class="hover:text-red-500 transition-all ease-in-out duration-700 "><i
+                class="fa-brands fa-square-facebook"></i></a></li>
+          <li class="mt-4"><a href="" class="hover:text-red-500 transition-all ease-in-out duration-700 "><i
+                class="fa-brands fa-square-instagram"></i></a></li>
+          <li class="mt-4"><a href="" class="hover:text-red-500 transition-all ease-in-out duration-700 "><i
+                class="fa-brands fa-square-x-twitter"></i></a></li>
+          <li class="mt-4"><a href="" class="hover:text-red-500 transition-all ease-in-out duration-700 "><i
+                class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/src/js/index.js"></script>
+</body>
+
+</html>
