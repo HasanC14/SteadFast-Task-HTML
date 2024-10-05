@@ -1,4 +1,4 @@
-# Chili's Website Clone
+# Restaurant Website
 
 This project is a simple restaurant website. It's a static website built using HTML, CSS, and JavaScript, with Tailwind CSS for styling.
 
